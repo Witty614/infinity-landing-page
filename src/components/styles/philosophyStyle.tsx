@@ -1,0 +1,207 @@
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
+
+export const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    textCenter: {
+      background: '#f6f6f6',
+    },
+    mainContent: {
+      marginBottom: '-1px',
+      backgroundColor: '#090909',
+    },
+    contentImgAndText: {
+      maxWidth: '1500px',
+      display: 'flex',
+      justifyContent: 'center',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+    contentGridText: {
+      marginTop: 'auto',
+      marginBottom: 'auto',
+      marginRight: '20px',
+      marginLeft: '30px',
+    },
+    contentGridImg: {
+      padding: '50px 30px',
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    contentImg: {
+      borderRadius: '50px',
+      border: 'solid 5px #222222',
+      backgroundImage: 'url(./img/landing/philosopydesc.jpg)',
+      backgroundRepeat: 'no-repeat',
+      width: '-webkit-fill-available',
+    },
+    contentOtherImg: {
+      borderRadius: '50px',
+      border: 'solid 5px #222222',
+      backgroundImage: 'url(./img/landing/philosophy.jpg)',
+      backgroundRepeat: 'no-repeat',
+      width: '-webkit-fill-available',
+    },
+    contentTextTitle: {
+      color: '#ffffff',
+      fontFamily: "'Spartan', Sans-serif",
+      fontSize: '50px',
+      textAlign: 'center',
+      fontWeight: 600,
+      letterSpacing: '2px',
+      paddingBottom: '20px',
+      paddingTop: '10px',
+    },
+    contentTextContext1: {
+      textAlign: 'justify',
+      color: '#999999',
+      fontSize: '16px',
+      paddingBottom: '20px',
+    },
+    contentTextContext2: {
+      color: '#ffffff',
+      textAlign: 'left',
+      fontFamily: "'ZCOOL XiaoWei', Sans-serif",
+      fontSize: '30px',
+      fontWeight: 400,
+      paddingBottom: '20px',
+    },
+    philosophyOptionsType1: {
+      padding: '80px 50px',
+      display: 'block',
+    },
+    philosophyOptionsBtn: {
+      border: '1px solid #d5d5d5',
+      borderRadius: '20px',
+      backgroundColor: '#ffffff',
+      textAlign: 'center',
+    },
+    philosophyOptionsBtnItem: {
+      color: 'black',
+      fontWeight: 600,
+      whiteSpace: 'nowrap',
+      padding: '25px 15px',
+      fontSize: '16px',
+      fontFamily: "'Spartan', sans-serif",
+    },
+    philosophyOptionsBtnItemActive: {
+      fontSize: '16px',
+      fontFamily: "'Spartan', sans-serif",
+      fontWeight: 600,
+      wordBreak: 'break-all',
+      padding: '7px',
+      color: '#5a8cdd',
+      height: 'calc(80% - 2px)',
+      width: '100%',
+      transform: 'translatex(0%) translatey(10px)',
+      backgroundColor: '#fff',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: '50px',
+      border: '1px solid #5a8cdd',
+      boxShadow: '5px 5px 15px #5a8cdd70',
+      zIndex: 10,
+    },
+    philosophyOptionsBtnGrid: {},
+    philosophyOptionsBtnGridActive: {
+      transform: 'translatex(0%) translatey(-20px)',
+      paddingLeft: '10px',
+      paddingRight: '10px',
+      borderTop: '2px solid #d5d5d5',
+      borderRadius: '40px',
+      background: 'white',
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '-2px',
+    },
+    philosophyOptionsContent: {
+      margin: '50px 0px 0px 0px',
+      padding: '2.1875em 1.375em',
+      borderRadius: '10px 10px 10px 10px',
+      overflow: 'hidden',
+      boxShadow: '0px 0px 35px 0px rgb(149 174 215 / 46%)',
+      borderStyle: 'solid',
+      borderWidth: '0px 0px 0px 0px',
+      backgroundColor: '#ffffff',
+      fontSize: '16px',
+      fontFamily: "'Spartan', sans-serif",
+      fontWeight: 500,
+      textAlign: 'left',
+      color: 'black',
+    },
+    philosophyOptionsType2: {
+      width: '100%',
+      padding: '100px',
+      display: 'none',
+    },
+    philosophyOptionTitle: {
+      fontFamily: "'Spartan', Sans-serif",
+      fontSize: '20px',
+      fontWeight: 600,
+      textAlign: 'left',
+    },
+    philosophyOptionContent: {
+      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+      fontSize: '18px',
+      fontWeight: 400,
+    },
+    [theme.breakpoints.down('sm')]: {
+      contentGridImg: {
+        padding: '50px 10%',
+      },
+      contentTextTitle: {
+        paddingTop: '20px',
+      },
+      contentImgAndText: {
+        display: 'block',
+      },
+      philosophyOptionsType1: {
+        display: 'flex',
+        justifyContent: 'center',
+      },
+      philosophyOptionsBtn: {
+        display: 'block',
+        width: '200px',
+      },
+      philosophyOptionsBtnGridActive: {
+        background: 'white',
+        transform: 'none',
+        borderTop: 'none',
+        marginTop: '5px',
+        marginBottom: '5px',
+        width: '200px',
+      },
+      philosophyOptionsBtnItem: {
+        fontSize: '14px',
+      },
+      philosophyOptionsBtnItemActive: {
+        height: '60px',
+        transform: 'none',
+        fontSize: '14px',
+      },
+      philosophyOptionsContent: {
+        margin: '0px 10px',
+        padding: '30px 20px',
+        height: '100%',
+      },
+      philosophyOptionsType2: {
+        display: 'none',
+      },
+    },
+    [theme.breakpoints.down(600)]: {
+      philosophyOptionsType1: {
+        display: 'none',
+      },
+      philosophyOptionsType2: {
+        padding: '50px',
+        display: 'block',
+      },
+    },
+    [theme.breakpoints.down(450)]: {
+      philosophyOptionsType2: {
+        padding: '30px',
+        display: 'block',
+      },
+    },
+  }),
+)
